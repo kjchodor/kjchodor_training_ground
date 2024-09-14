@@ -16,7 +16,7 @@ def jest_liczba(liczba_podana):
     return True
 
 while True:
-    porarzka = 0
+    porazka = 0
     print("podaj liczbe:")
     liczba_podana = input()
     if liczba_podana == liczba_do_zgadniecia:
@@ -41,21 +41,21 @@ while True:
     elif liczba_podana[0] == liczba_do_zgadniecia[1] or liczba_podana[0] == liczba_do_zgadniecia[2]:
         print("piko")
     else:
-        porarzka = porarzka + 1
+        porazka = porazka + 1
 
     if liczba_podana[1] == liczba_do_zgadniecia[1]:
         print("fermi")
     elif liczba_podana[1] == liczba_do_zgadniecia[0] or liczba_podana[1] == liczba_do_zgadniecia[2]:
         print("piko")
     else:
-        porarzka = porarzka + 1
+        porazka = porazka + 1
 
     if liczba_podana[2] == liczba_do_zgadniecia[2]:
         print("fermi")
     elif liczba_podana[2] == liczba_do_zgadniecia[1] or liczba_podana[2] == liczba_do_zgadniecia[0]:
         print("piko")
     else:
-        porarzka = porarzka + 1
+        porazka = porazka + 1
 
-    if porarzka == 3:
+    if porazka == 3:
         print("bajgle")
